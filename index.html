@@ -5,10 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link rel="stylesheet" type="text/css" href="./bootstrap/css/bootstrap.min.css">
     <title>..:: yourplace ::..</title>
 </head>
 <body>
    <!-- Aula 24/04/2023 - HTML -->
+   <!-- Início Menu Responsivo -->
    <header id="header">
         <a id="logo" href="index.html"><img src="./img/yourplace_logo.png" alt="Logo yourplace"></a>
         <nav> <a id="nav">
@@ -21,12 +23,69 @@
                 <li><a class="linkMenu" href="streaming.html">#Streaming</a></li>
                 <li><a class="linkMenu" href="contato.html">Contato</a></li>
                 <!-- Atalho para copiar conteúdo > Alt + Shift + Seta para baixo-->
-            </ul>
-        
-
-        </nav>
-
-        
+            </ul>   
+        </nav>     
    </header>
+   <!-- Fim Menu Responsivo -->
+   <!-- Início Carousel Página Principal -->
+   <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="1200">
+                <img
+                src="./img/carousel_1.png"
+                class="d-block w-100"
+                alt="..."
+                /> 
+            </div>                
+            <div class="carousel-item" data-bs-interval="1800">
+                <img
+                src="./img/carousel_2.png"
+                class="d-block w-100"
+                alt="..."
+                /> 
+            </div>        
+            <div class="carousel-item" data-bs-interval="1800">
+                <img
+                src="./img/carousel_3.png"
+                class="d-block w-100"
+                alt="..."
+                /> 
+            </div>            
+            <div class="carousel-item" data-bs-interval="1800">
+                <img
+                src="./img/carousel_4.png"
+                class="d-block w-100"
+                alt="..."
+                /> 
+            </div>
+        </div>
+        <!-- Fim Imagens Carousel -->
+        <!-- Início Controle do Carousel -->
+        <button 
+            class="carousel-control-prev"
+            data-bs-target="#carouselExampleInterval"
+            type="button"
+            data-bs-slide="prev"
+
+        >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button 
+            class="carousel-control-next"
+            data-bs-target="#carouselExampleInterval"
+            type="button"
+            data-bs-slide="next"
+
+        >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <!-- Fim Carousel Página Principal-->
+
 </body>
+
+    <script type="text/javascript" src="./bootstrap/js/bootstrap.min.js"></script>
+
 </html>
