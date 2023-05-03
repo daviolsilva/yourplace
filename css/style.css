@@ -15,7 +15,7 @@ body, ul {
 }
 
 #menu a:hover {
-    color: crimson;
+    color: rgba(65, 63, 63, 0.664);
     font-size: 1.6em;
     transition: 0.3s;
     text-shadow: 4px 4px 6px #0000007a;
@@ -41,7 +41,7 @@ body, ul {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: #e7e7e7;
+    background: #fff;
 }
 #menu {
     display: flex;
