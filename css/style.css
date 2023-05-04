@@ -1,3 +1,4 @@
+@import url(https://fonts.googleapis.com/css2?family=Raleway);
 /* Arquivo responsável pelos estilos */
 /* Aula 24/04/2023 - Estilos do Menu */
 body, ul {
@@ -7,11 +8,10 @@ body, ul {
 #menu a {
     color:black;
     text-decoration: none;
-    font-family: sans-serif;
+    font-family: 'Raleway';
     font-size: 1.25em;
     text-transform: uppercase;
     transition: 0.3s;
-
 }
 
 #menu a:hover {
@@ -41,7 +41,7 @@ body, ul {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: #fff;
+    background: rgb(228, 211, 157);
 }
 #menu {
     display: flex;
@@ -58,7 +58,7 @@ body, ul {
     width: 100%;
 }
 #carouselExampleInterval img {
-    height: auto;
+    height: 900px;
     width: auto;
 }
 
@@ -68,7 +68,7 @@ body, ul {
     height: 500px;
     margin-top: 10px;
     padding: 50px;
-    background-color: #ffd726;    
+    background-color: #d6c99e;    
 }
 .section-banner-home img {
     height: 400px;
@@ -91,7 +91,48 @@ body, ul {
 .section-banner-home .texto-banner a {
     color: rgb(0, 0, 0);
     text-decoration: none;
-    background-color: #fff;
+    background-color: rgb(255, 255, 255);
     padding: 4px 14px;
     font-size: 15px;    
+}
+/* Fim CSS Estilos Banner */
+
+/* Início CSS Destaque */
+
+.destaque h2 {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+}
+.destaque p {
+    width: 77%;
+    text-align: center;
+    font-size: 14px;
+    margin: 30px auto;
+}
+.destaque figcaption {
+    font-size: 13px;
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+}
+.destaque a {
+    justify-content: center;
+    display: flex;
+    text-decoration: none;
+    color: #000000;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 30px 0;
+}
+.destaque a:hover {
+    color: #0247ad;
+    font-size: 20px;
+    transition: 0.3s;
+}
+
+.destaque img {
+    height: 100px;    
 }
