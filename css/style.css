@@ -56,10 +56,11 @@ body, ul {
     z-index: 10;
     padding-top: 75px;
     width: 100%;
+    box-shadow: 4px 4px 6px #0000007a;
 }
 #carouselExampleInterval img {
     height: 900px;
-    width: auto;
+    width: 100%;
 }
 
 /* CSS Estilos Banner */
@@ -72,11 +73,15 @@ body, ul {
 }
 .section-banner-home img {
     height: 400px;
-    width: auto;    
+    width: 450px; 
+    margin-left: 180px;   
+    box-shadow: 4px 4px 6px #0000007a;
 }
 .section-banner-home .texto-banner {
     margin-top: 30px;
-    font-size: 22px;    
+    font-size: 22px;   
+    margin-right: 150px; 
+    font-family: 'Raleway';
 }
 .section-banner-home .texto-banner h1 {
     font-size: 30px;
@@ -94,6 +99,12 @@ body, ul {
     background-color: rgb(255, 255, 255);
     padding: 4px 14px;
     font-size: 15px;    
+    box-shadow: 4px 4px 6px #0000007a; 
+    transition: 0.3s;
+}
+.section-banner-home .texto-banner a:hover {
+    color: #0247ad;
+    transition: 0.3s;   
 }
 /* Fim CSS Estilos Banner */
 
@@ -104,12 +115,14 @@ body, ul {
     text-align: center;
     font-size: 24px;
     font-weight: bold;
+    font-family: 'Raleway';
 }
 .destaque p {
     width: 77%;
     text-align: center;
     font-size: 14px;
     margin: 30px auto;
+    font-family: 'Raleway';
 }
 .destaque figcaption {
     font-size: 13px;
@@ -117,6 +130,7 @@ body, ul {
     text-decoration: none;
     font-weight: bold;
     text-align: center;
+    font-family: 'Raleway';
 }
 .destaque a {
     justify-content: center;
@@ -125,14 +139,18 @@ body, ul {
     color: #000000;
     font-size: 18px;
     font-weight: bold;
-    margin: 30px 0;
+    margin: 20px 0;
+    font-family: 'Raleway';
 }
 .destaque a:hover {
     color: #0247ad;
     font-size: 20px;
     transition: 0.3s;
+    font-family: 'Raleway';
 }
 
 .destaque img {
-    height: 100px;    
+    height: 200px; 
+    transition: 0.3s;
+    box-shadow: 4px 4px 6px #0000007a;   
 }
