@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,77 +10,54 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway">
     <title>..:: yourplace ::..</title>
 </head>
+
 <body>
-   <!-- Aula 24/04/2023 - HTML -->
-   <!-- Início Menu Responsivo -->
-   <header id="header">
+    <!-- Aula 24/04/2023 - HTML -->
+    <!-- Início Menu Responsivo -->
+    <header id="header">
         <a id="logo" href="index.html"><img src="./img/Don_Juan-removebg-preview.png" alt="Logo yourplace"></a>
         <nav> <a id="nav">
-            <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false">
-                <span id="hamburguer"></span>
-            </button>
-            <ul id="menu" role="menu">
-                <li><a class="linkMenu" href="index.html">Home</a></li>
-                <li><a class="linkMenu" href="produtos.html">Produtos</a></li>
-                <li><a class="linkMenu" href="streaming.html">#Streaming</a></li>
-                <li><a class="linkMenu" href="contato.html">Contato</a></li>
-                <!-- Atalho para copiar conteúdo > Alt + Shift + Seta para baixo-->
-            </ul>   
-        </nav>     
-   </header>
-   <!-- Fim Menu Responsivo -->
-   <!-- Início Carousel Página Principal -->
+                <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu"
+                    aria-expanded="false">
+                    <span id="hamburguer"></span>
+                </button>
+                <ul id="menu" role="menu">
+                    <li><a class="linkMenu" href="index.html">Home</a></li>
+                    <li><a class="linkMenu" href="produtos.html">Produtos</a></li>
+                    <li><a class="linkMenu" href="streaming.html">Streaming</a></li>
+                    <li><a class="linkMenu" href="contato.html">Contato</a></li>
+                    <!-- Atalho para copiar conteúdo > Alt + Shift + Seta para baixo-->
+                </ul>
+        </nav>
+    </header>
+    <!-- Fim Menu Responsivo -->
+    <!-- Início Carousel Página Principal -->
     <div class="container">
-        <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel" data-bs-pause="false">    
-            <div class="carousel-inner" role="listbox">            
+        <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel" data-bs-pause="false">
+            <div class="carousel-inner" role="listbox">
                 <div class="carousel-item active" data-bs-interval="1800">
-                    <img
-                    src="./img/carousel_1.jpg"
-                    class="d-block w-100"
-                    alt="...">
-                    
-                </div>                
+                    <img src="./img/carousel_1.jpg" class="d-block w-100" alt="...">
+
+                </div>
                 <div class="carousel-item" data-bs-interval="1600">
-                    <img
-                    src="./img/carousel_2.jpg"
-                    class="d-block w-100"
-                    alt="..."
-                    /> 
-                </div>        
+                    <img src="./img/carousel_2.jpg" class="d-block w-100" alt="..." />
+                </div>
                 <div class="carousel-item" data-bs-interval="1600">
-                    <img
-                    src="./img/carousel_3.jpg"
-                    class="d-block w-100"
-                    alt="..."
-                    /> 
-                </div>            
+                    <img src="./img/carousel_3.jpg" class="d-block w-100" alt="..." />
+                </div>
                 <div class="carousel-item" data-bs-interval="1600">
-                    <img
-                    src="./img/carousel_4.jpg"
-                    class="d-block w-100"
-                    alt="..."
-                    /> 
+                    <img src="./img/carousel_4.jpg" class="d-block w-100" alt="..." />
                 </div>
             </div>
             <!-- Fim Imagens Carousel -->
             <!-- Início Controle do Carousel -->
-            <button 
-                class="carousel-control-prev"
-                data-bs-target="#carouselExampleInterval"
-                type="button"
-                data-bs-slide="prev"
-
-            >
+            <button class="carousel-control-prev" data-bs-target="#carouselExampleInterval" type="button"
+                data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>
             </button>
-            <button 
-                class="carousel-control-next"
-                data-bs-target="#carouselExampleInterval"
-                type="button"
-                data-bs-slide="next"
-
-            >
+            <button class="carousel-control-next" data-bs-target="#carouselExampleInterval" type="button"
+                data-bs-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
             </button>
@@ -98,13 +76,15 @@
                 </div>
                 <div class="col-12 col-md-6">
                     <section class="texto-banner d-none d-md-block">
-                        <h1> Venha conhecer o nosso novo lançamento!!! </h1>
-                        <p class="d-none d-md-block">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, eius cum nemo molestiae, nisi cupiditate, voluptatum laudantium enim officiis sapiente provident. Inventore reprehenderit quasi accusantium dignissimos quos, tempore deserunt magnam.</p>
+                        <h1> Venha conhecer o nosso novo lançamento! </h1>
+                        <p class="d-none d-md-block">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, eius
+                            cum nemo molestiae, nisi cupiditate, voluptatum laudantium enim officiis sapiente provident.
+                            Inventore reprehenderit quasi accusantium dignissimos quos, tempore deserunt magnam.</p>
                         <a href="produtos.html"> Saiba Mais </a>
                     </section>
                 </div>
             </div>
-        </div>            
+        </div>
     </div>
     <!-- Fim do Banner-->
     <!-- Início Destaque -->
@@ -115,58 +95,166 @@
                 <section class="col-12">
                     <h2> Que tal conhecer nossas imagens capturadas no espaço?
                     </h2>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur eos, aperiam deleniti voluptas ipsum magni quisquam  molestias blanditiis esse repellendus modi recusandae porro optio numquam, consequatur minus, harum perspiciatis quia.</p>                    
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur eos, aperiam deleniti
+                        voluptas ipsum magni quisquam molestias blanditiis esse repellendus modi recusandae porro optio
+                        numquam, consequatur minus, harum perspiciatis quia.</p>
                 </section>
                 <!-- Fim da Tag Section do Texto Destaque -->
                 <!-- Início da Imagem 1 -->
                 <div class="col-6 col-md-2 pr-0">
-                        <figure>
-                            <a href="produtos.html"><img src="./img/Meisterstuck-149_produto_1.jpg" alt="produto destaque" width="100%"></a>
-                            <figcaption>Meisterstuck-149 <br> R$9.000,00</figcaption>
-                        </figure>                
+                    <figure>
+                        <a href="produtos.html"><img src="./img/Meisterstuck-149_produto_1.jpg" alt="produto destaque"
+                                width="100%"></a>
+                        <figcaption>Meisterstuck-149 <br> R$9.000,00</figcaption>
+                    </figure>
                 </div>
                 <!-- Fim da Imagem 1 -->
                 <!-- Início da Imagem 2 -->
                 <div class="col-6 col-md-2 pr-0">
-                        <figure>
-                            <a href="produtos.html"><img src="./img/Heritage Noir Baby_produto_2.jpg" alt="produto destaque" width="100%"></a>
-                            <figcaption>Heritage Noir Baby <br> R$2.049.99</figcaption>
-                        </figure>                
+                    <figure>
+                        <a href="produtos.html"><img src="./img/Heritage Noir Baby_produto_2.jpg" alt="produto destaque"
+                                width="100%"></a>
+                        <figcaption>Heritage Noir Baby <br> R$2.049.99</figcaption>
+                    </figure>
                 </div>
                 <!-- Fim da Imagem 2 -->
                 <!-- Início da Imagem 3 -->
                 <div class="col-6 col-md-2 pr-0">
-                        <figure>
-                            <a href="produtos.html"><img src="./img/Caneta-3D_produto_3.jpg" alt="produto destaque" width="100%"></a>
-                            <figcaption>Caneta 3D <br> R$1.099,00</figcaption>
-                        </figure>                
+                    <figure>
+                        <a href="produtos.html"><img src="./img/Caneta-3D_produto_3.jpg" alt="produto destaque"
+                                width="100%"></a>
+                        <figcaption>Caneta 3D <br> R$1.099,00</figcaption>
+                    </figure>
                 </div>
                 <!-- Fim da Imagem 3 -->
                 <!-- Início da Imagem 4 -->
                 <div class="col-6 col-md-2 pr-0">
-                        <figure>
-                            <a href="produtos.html"><img src="./img//Mochila-10K_produto_4.jpg" alt="produto destaque" width="100%"></a>
-                            <figcaption>Mochila Sartorial<br> R$10.000,00</figcaption>
-                        </figure>                
+                    <figure>
+                        <a href="produtos.html"><img src="./img//Mochila-10K_produto_4.jpg" alt="produto destaque"
+                                width="100%"></a>
+                        <figcaption>Mochila Sartorial<br> R$10.000,00</figcaption>
+                    </figure>
                 </div>
                 <!-- Fim da Imagem 4 -->
                 <!-- Início da Imagem 5 -->
                 <div class="col-6 col-md-2 pr-0">
-                        <figure>
-                            <a href="produtos.html"><img src="./img/Meisterstuck_produto_5.jpg" alt="produto destaque" width="100%"></a>
-                            <figcaption>Pulseira Meisterstuck <br> R$429,00</figcaption>
-                        </figure>                
+                    <figure>
+                        <a href="produtos.html"><img src="./img/Meisterstuck_produto_5.jpg" alt="produto destaque"
+                                width="100%"></a>
+                        <figcaption>Pulseira Meisterstuck <br> R$429,00</figcaption>
+                    </figure>
                 </div>
                 <!-- Fim da Imagem 5 -->
                 <!-- Início Saiba Mais -->
                 <div class="col-12">
                     <a href="#"> Saiba Mais </a>
-                </div>    
+                </div>
                 <!-- Fim Saiba Mais -->
             </div>
         </div>
     </div>
     <!-- Fim Destaque -->
+    <!-- Início do Texto Novidades -->
+    <div class="novidades" id="novidades-mobile">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-6">
+                    <section class="text-body">
+                        <h2> Conheça nossas novidades </h2>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime, voluptatem omnis, esse est
+                            voluptatum magni molestiae ut in harum illo quas dignissimos odit voluptas veniam numquam
+                            magnam cupiditate laboriosam adipisci.</p>
+                        <a class="btn-banner" href="#" target="blank"> Saiba Mais </a>
+                    </section>
+                </div>
+                <!-- Fim Texto Novidades -->
+                <!-- Início Imagem Novidades -->
+                <div class="col-md-6">
+                    <figure>
+                        <img src="./img/banner novidade.png" class="img-fluid" alt="banner-home">
+                    </figure>
+                </div>
+                <!-- Fim Imagem Novidade -->
+            </div>
+        </div>
+    </div>
+    <!-- Alt + SHIFT + F > Corrige a Identação do Código >> Escolha << 2ª Opção >> Recursos da Linguagem HTML -->
+    <!-- Início Galeria -->
+    <div class="galeria d-flex align-itens-center">
+        <div class="container">
+            <div class="row">
+                <!-- Início Texto Galerias -->
+                <div class="col-12">
+                    <section class="texto-galeria">
+                        <h2> Conheça nossa galeria </h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam incidunt labore accusamus sint cumque deserunt ut numquam veritatis voluptatum minima velit atque ad esse, quaerat harum beatae eius excepturi natus?</p>
+                    </section>
+                </div>
+                <!-- Fim Texto Galerias -->
+                <!-- Início Imagem 1 Galeria -->
+                <div class="gallery col-6 com-md-3">
+                    <img src="./img/Heritage Noir Baby_produto_2.jpg" class= "img-fluid" alt="img-galeria">
+                </div>
+                <!-- Fim da Imagem 1 Galeria -->
+                <!-- Início Imagem 2 Galeria -->
+                <div class="gallery col-6 com-md-3">
+                    <img src="./img/Heritage Noir Baby_produto_2.jpg" class= "img-fluid" alt="img-galeria">
+                </div>
+                <!-- Fim da Imagem 2 Galeria -->
+                <!-- Início Imagem 3 Galeria -->
+                <div class="gallery col-6 com-md-3">
+                    <img src="./img/Heritage Noir Baby_produto_2.jpg" class= "img-fluid" alt="img-galeria">
+                </div>
+                <!-- Fim da Imagem 3 Galeria -->
+                <!-- Início Imagem 4 Galeria -->
+                <div class="gallery col-6 com-md-3">
+                    <img src="./img/Heritage Noir Baby_produto_2.jpg" class= "img-fluid" alt="img-galeria">
+                </div>
+                <!-- Fim da Imagem 4 Galeria -->
+                <!-- Início Imagem 5 Galeria -->
+                <div class="gallery col-6 com-md-3">
+                    <img src="./img/Heritage Noir Baby_produto_2.jpg" class= "img-fluid" alt="img-galeria">
+                </div>
+                <!-- Fim da Imagem 5 Galeria -->
+                <!-- Início Imagem 6 Galeria -->
+                <div class="gallery col-6 com-md-3">
+                    <img src="./img/Heritage Noir Baby_produto_2.jpg" class= "img-fluid" alt="img-galeria">
+                </div>
+                <!-- Fim da Imagem 6 Galeria -->
+                <!-- Início Imagem 7 Galeria -->
+                <div class="gallery col-6 com-md-3">
+                    <img src="./img/Heritage Noir Baby_produto_2.jpg" class= "img-fluid" alt="img-galeria">
+                </div>
+                <!-- Fim da Imagem 7 Galeria -->
+                <!-- Início Imagem 8 Galeria -->
+                <div class="gallery col-6 com-md-3">
+                    <img src="./img/Heritage Noir Baby_produto_2.jpg" class= "img-fluid" alt="img-galeria">
+                </div>
+                <!-- Fim da Imagem 8 Galeria -->
+                <!-- Início Imagem 9 Galeria -->
+                <div class="gallery col-6 com-md-3">
+                    <img src="./img/Heritage Noir Baby_produto_2.jpg" class= "img-fluid" alt="img-galeria">
+                </div>
+                <!-- Fim da Imagem 9 Galeria -->
+                <!-- Início Imagem 10 Galeria -->
+                <div class="gallery col-6 com-md-3">
+                    <img src="./img/Heritage Noir Baby_produto_2.jpg" class= "img-fluid" alt="img-galeria">
+                </div>
+                <!-- Fim da Imagem 10 Galeria -->
+                <!-- Início Imagem 11 Galeria -->
+                <div class="gallery col-6 com-md-3">
+                    <img src="./img/Heritage Noir Baby_produto_2.jpg" class= "img-fluid" alt="img-galeria">
+                </div>
+                <!-- Fim da Imagem 11 Galeria -->
+                <!-- Início Imagem 12 Galeria -->
+                <div class="gallery col-6 com-md-3">
+                    <img src="./img/Heritage Noir Baby_produto_2.jpg" class= "img-fluid" alt="img-galeria">
+                </div>
+                <!-- Fim da Imagem 12 Galeria -->
+            </div>
+        </div>
+    </div>
+    <!-- Fim Galeria -->
 
 
 </body>
