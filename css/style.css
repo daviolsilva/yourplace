@@ -299,11 +299,24 @@ ul {
     font-family: 'Raleway';
 }
 
-.galeria .gallery {
+.galeria .gallery{
     width: 50%;
     margin: 14px auto 50px;
     width: 200px;
     height: 200px;
+}
+.galeria .gallery img {
+    width: 80%;
+    height: 80%;
+    -webkit-transition: -webkit-transform .5s ease;
+    transition: transform .5s ease;
+    display: block;
+}
+
+.galeria .gallery img:hover {
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 /* Fim CSS Galeria */
@@ -316,6 +329,11 @@ ul {
 .rodape .container img {
     height: 50%;
     width: 50%;
+    padding-left: 5px;
+    transition: transform .2s ease;
+}
+.rodape .container img:hover {
+   transform: scale(1.3);
 }
 
 .rodape .info-contato p {
