@@ -462,7 +462,7 @@ display: flex;
 /* Início CSS Contato */
 
 .contato {
-    margin-top: 20px;
+    margin-top: 50px;
 }
 .form_main {
     width: 100%;    
@@ -476,28 +476,34 @@ display: flex;
     text-transform: uppercase;
 }
 .text-left{
-    border-bottom: 1px solid #a7a7a7ab;
+    border-bottom: 2px solid #a7a7a7ab;
     padding-bottom: 9px;
     position: relative;
 }
 #text-local{
-    border-bottom: 1px solid #a7a7a7ab;
+    border-bottom: 2px solid #a7a7a7ab;
     margin-bottom: 9px;
     position: relative;
 }
 .text-left span {
     background: #9e6600 none repeat scroll 0 0;
     bottom: -2px;
-    height: 3px;
+    height: 0;
     left: 0;
     position: absolute;
-    width: 130px;
+    width: 75px;
 }
 .form-horizontal {
-    border-radius: 107px;
+    border-radius: 7px;
     padding: 6px;    
 }
 .form-control [type="text"] {
+    border: 1px solid #ccc;
+    margin: 10px 0;
+    padding: 10px 0 10px 5px;
+    width: 100%;
+}
+.form-control [type="email"] {
     border: 1px solid #ccc;
     margin: 10px 0;
     padding: 10px 0 10px 5px;
@@ -518,7 +524,7 @@ display: flex;
     border-radius: 25px;
     color: #fff;
     font-size: 16px;
-    font-style: none;
+    font-style: normal;
     line-height: 35px;
     margin: 10px 0;
     text-transform: uppercase;
@@ -565,14 +571,32 @@ display: flex;
     animation-direction: alternate;
     animation-iteration-count: infinite;
 }
-@keyframes pulando {
-    0% {
-        transform: translateY(0px);
+.whatsapp .pulse {
+    animation: pulse 0.7s infinite;
+    margin: 0 auto;
+    display: table;
+    margin-top: 50px;
+    animation-direction: alternate;
+    -webkit-animation-name: pulse;
+    animation-name:pulse
+}
+@-webkit-keyframes pulse {
+    0%{
+        -webkit-transform: scale(1);
+        -webkit-filter: brightness(100%);
     }
     100% {
-        transform: translateY(100%);
-        width: 70px;
-        height: 40px;
+        -webkit-transform: scale(1.1);
+        -webkit-filter: brightness(110%);
     }
 }
-/* Fim Whatsapp */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        filter: brightness(100%);        
+    }
+    100% {
+        transform: scale(1.1);
+        filter: brightness(110%);
+    }
+}
