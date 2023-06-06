@@ -49,6 +49,7 @@ ul {
     align-items: center;
     justify-content: space-between;
     background: rgb(228, 211, 157);
+    box-shadow: 4px 4px 6px #0000007a;
 }
 
 #header figcaption {
@@ -71,14 +72,21 @@ ul {
 #carouselExampleInterval {
     position: relative;
     z-index: 10;
-    padding-top: 75px;
+    padding-top: 0;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
     width: 100%;
     box-shadow: 4px 4px 6px #0000007a;
+    transition: 0.3s;
+    display: inline-flex;
+
 }
 
+
 #carouselExampleInterval img {
-    height: 900px;
-    width: 100%;
+    height: auto;
+    width: 90%;
 }
 
 @media (max-width: 600px) {
@@ -134,7 +142,7 @@ ul {
         content: '';
         display: block;
         width: 30px;
-        /* Alterando a Largura do hamberger */
+        /* Alterando a Largura do hamburger */
         height: 2px;
         background: currentColor;
         margin-top: 4px;
@@ -156,7 +164,6 @@ ul {
         transform: rotate(-135deg);
         top: -7px;
     }
-
 
 }
 
@@ -272,7 +279,8 @@ ul {
 }
 
 .novidades h2 {
-    color: #000
+    color: #000;
+    font-family: 'Raleway';
 }
 
 .novidades p {
@@ -280,15 +288,21 @@ ul {
     font-family: 'Raleway';
 }
 
-.novidades a {
-    color: rgb(0, 0, 0);
+.novidades a {  
+    color: #000000;
     text-decoration: underline;
-    text-decoration-color: rgb(0, 0, 0);
+    text-decoration-color: rgb(0, 0, 0);   
+    font-weight: bold;
     padding: 6px 12px;
     background-color: rgb(255, 255, 255);
     font-weight: 400;
-    box-shadow: 4px 4px 6px #0000007a;
     font-family: 'Raleway';
+    box-shadow: rgba rgba(187, 187, 187, 0.753);
+    display: flex;
+    color: #000000;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 20px 0;
 }
 
 /* Fim CSS Novidades */
@@ -351,7 +365,7 @@ ul {
     background-color: #d6c99e;
 }
 
-.rodape .container img {
+.rodape .container #img-logo {
     height: 50%;
     width: 50%;
     padding-left: 5px;
@@ -359,7 +373,7 @@ ul {
     margin-top: 10px;
 }
 
-.rodape .container img:hover {
+.rodape .container #img-logo:hover {
     transform: scale(1.3);
     margin-top: 10px;
 }
@@ -393,6 +407,16 @@ ul {
     width: 45px;
     height: 40px;
     margin-top: 30px;
+    padding-left: 0;
+    margin-left: 0.7rem;
+    transition: transform .3s;
+    border-radius: 5px; /* Arredondando div do Objeto Redes Sociais */
+}
+
+.rodape .redes-sociais img:hover {
+    z-index: 1;
+    transform: scale(1.5);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.446);
 }
 
 .rodape p.direitos {
@@ -474,16 +498,19 @@ display: flex;
     margin-top: 17px;    
     margin-bottom: 15px;
     text-transform: uppercase;
+    font-family: 'Raleway';
 }
 .text-left{
     border-bottom: 2px solid #a7a7a7ab;
     padding-bottom: 9px;
     position: relative;
+    font-family: 'Raleway';
 }
 #text-local{
     border-bottom: 2px solid #a7a7a7ab;
     margin-bottom: 9px;
     position: relative;
+    font-family: 'Raleway';
 }
 .text-left span {
     background: #9e6600 none repeat scroll 0 0;
@@ -492,27 +519,32 @@ display: flex;
     left: 0;
     position: absolute;
     width: 75px;
+    font-family: 'Raleway';
 }
 .form-horizontal {
     border-radius: 7px;
-    padding: 6px;    
+    padding: 6px; 
+    font-family: 'Raleway';   
 }
 .form-control [type="text"] {
     border: 1px solid #ccc;
     margin: 10px 0;
     padding: 10px 0 10px 5px;
     width: 100%;
+    font-family: 'Raleway';
 }
 .form-control [type="email"] {
     border: 1px solid #ccc;
     margin: 10px 0;
     padding: 10px 0 10px 5px;
     width: 100%;
+    font-family: 'Raleway';
 }
 .form-control-msg[type="text"] {
     margin: 10px 0 0;
     padding: 10px 0 10px 5 px;
     width: 100%;
+    font-family: 'Raleway';
 }
 .formbutton[type="submit"] {
     -moz-box-shadow: inset 0px 1px 0px 0px #eee5c4;
@@ -529,6 +561,7 @@ display: flex;
     margin: 10px 0;
     text-transform: uppercase;
     width: 30%;    
+    font-family: 'Raleway';
 }
 .formbutton:hover {
     background-color: #d6c99e;
