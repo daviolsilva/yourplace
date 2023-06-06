@@ -73,9 +73,9 @@ ul {
     position: relative;
     z-index: 10;
     padding-top: 0;
-    margin-left: 10px;
-    margin-right: 10px;
-    margin-bottom: 10px;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 0;
     width: 100%;
     box-shadow: 4px 4px 6px #0000007a;
     transition: 0.3s;
